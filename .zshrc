@@ -105,3 +105,4 @@ source $ZSH/oh-my-zsh.sh
 
 alias rm="rm -rf"
 alias ip="ip --color=auto"
+alias ll="ls -hal --color=auto"
