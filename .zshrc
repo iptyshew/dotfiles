@@ -109,6 +109,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+eval `ssh-agent` &> /dev/null
+ssh-add ~/.ssh/id_ed25519 &> /dev/null
 
 alias rm="rm -rf"
 alias ip="ip --color=auto"

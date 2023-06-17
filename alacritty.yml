@@ -287,11 +287,11 @@ draw_bold_text_with_bright_colors: false
 #  args:
 #    - --login
 shell:
-  program: /bin/bash
+  program: /bin/zsh
   args:
     - -l
-    - -c
-    - "tmux"
+      #    - -c
+      #    - "tmux"
 
 # Startup directory
 #
