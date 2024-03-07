@@ -1,0 +1,57 @@
+[colors]
+draw_bold_text_with_bright_colors = false
+
+[colors.bright]
+black = "0x6f6f6f"
+blue = "0x808080"
+cyan = "0x000000"
+green = "0x404040"
+magenta = "0xc0c0c0"
+red = "0xdfaf8f"
+white = "0xffffff"
+yellow = "0x606060"
+
+[colors.cursor]
+cursor = "0xdcdccc"
+text = "0x383838"
+
+[colors.normal]
+black = "0x383838"
+blue = "0x7cb8bb"
+cyan = "0x93e0e3"
+green = "0x5f7f5f"
+magenta = "0xdc8cc3"
+red = "0xdca3a3"
+white = "0xdcdccc"
+yellow = "0xe0cf9f"
+
+[colors.primary]
+background = "0x383838"
+foreground = "0xdcdccc"
+
+[font]
+size = 12
+
+[font.bold]
+family = "Consolas"
+style = "Bold"
+
+[font.bold_italic]
+family = "Consolas"
+style = "bold italic"
+
+[font.italic]
+family = "Consolas"
+style = "Italic"
+
+[font.normal]
+family = "Consolas"
+style = "Regular"
+
+[shell]
+args = ["-l"]
+program = "/bin/zsh"
+
+[window]
+decorations = "none"
+startup_mode = "Fullscreen"
