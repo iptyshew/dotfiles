@@ -34,7 +34,7 @@ set $refresh_i3status killall -SIGUSR1 i3status
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+e exec alacritty
+bindsym $mod+e exec alacritty -e ssh kate -t "emacs -nw"
 bindsym $mod+Return exec alacritty -e tmux
 
 # kill focused window
