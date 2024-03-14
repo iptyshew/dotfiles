@@ -1,33 +1,85 @@
-[colors]
-draw_bold_text_with_bright_colors = false
 
-[colors.bright]
-black = "0x6f6f6f"
-blue = "0x808080"
-cyan = "0x000000"
-green = "0x404040"
-magenta = "0xc0c0c0"
-red = "0xdfaf8f"
-white = "0xffffff"
-yellow = "0x606060"
-
-[colors.cursor]
-cursor = "0xdcdccc"
-text = "0x383838"
-
-[colors.normal]
-black = "0x383838"
-blue = "0x7cb8bb"
-cyan = "0x93e0e3"
-green = "0x5f7f5f"
-magenta = "0xdc8cc3"
-red = "0xdca3a3"
-white = "0xdcdccc"
-yellow = "0xe0cf9f"
+# Nightfox Alacritty Colors
+## name: nightfox
+## upstream: https://github.com/edeneast/nightfox.nvim/raw/main/extra/nightfox/alacritty.toml
 
 [colors.primary]
-background = "0x383838"
-foreground = "0xdcdccc"
+background = "#192330"
+foreground = "#cdcecf"
+dim_foreground = "#aeafb0"
+bright_foreground = "#d6d6d7"
+
+[colors.cursor]
+text = "#cdcecf"
+cursor = "#aeafb0"
+
+[colors.vi_mode_cursor]
+text = "#cdcecf"
+cursor = "#63cdcf"
+
+[colors.search.matches]
+foreground = "#cdcecf"
+background = "#3c5372"
+
+[colors.search.focused_match]
+foreground = "#cdcecf"
+background = "#81b29a"
+
+[colors.footer_bar]
+foreground = "#cdcecf"
+background = "#29394f"
+
+[colors.hints.start]
+foreground = "#cdcecf"
+background = "#f4a261"
+
+[colors.hints.end]
+foreground = "#cdcecf"
+background = "#29394f"
+
+[colors.selection]
+text = "#cdcecf"
+background = "#2b3b51"
+
+[colors.normal]
+black = "#393b44"
+red = "#c94f6d"
+green = "#81b29a"
+yellow = "#dbc074"
+blue = "#719cd6"
+magenta = "#9d79d6"
+cyan = "#63cdcf"
+white = "#dfdfe0"
+
+[colors.bright]
+black = "#575860"
+red = "#d16983"
+green = "#8ebaa4"
+yellow = "#e0c989"
+blue = "#86abdc"
+magenta = "#baa1e2"
+cyan = "#7ad5d6"
+white = "#e4e4e5"
+
+[colors.dim]
+black = "#30323a"
+red = "#ab435d"
+green = "#6e9783"
+yellow = "#baa363"
+blue = "#6085b6"
+magenta = "#8567b6"
+cyan = "#54aeb0"
+white = "#bebebe"
+
+[[colors.indexed_colors]]
+index = 16
+color = "#f4a261"
+
+[[colors.indexed_colors]]
+index = 17
+color = "#d67ad2"
+[colors]
+draw_bold_text_with_bright_colors = false
 
 [font]
 size = 12
