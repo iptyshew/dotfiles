@@ -172,12 +172,15 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-bindsym Control+$mod+l exec swaylock -i /home/iptyshew/Downloads/NyaITD5-arch-linux-wallpaper.png
+bindsym Control+$mod+l exec swaylock -i /home/iptyshew/pictures/NyaITD5-arch-linux-wallpaper.png --ring-color 808080 --key-hl-color 000000 
+
+exec swayidle -w \
+        timeout 30 'swaylock -i /home/iptyshew/pictures/NyaITD5-arch-linux-wallpaper.png --ring-color 808080 --key-hl-color 000000' 
 
 input * xkb_layout "us,ru"
 input type:keyboard {
     repeat_delay 200
-    repeat_rate 80
+    repeat_rate 50
     xkb_options "caps:ctrl_modifier,grp:alt_space_toggle"
 }
 
