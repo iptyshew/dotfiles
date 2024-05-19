@@ -175,7 +175,8 @@ bindsym $mod+r mode "resize"
 bindsym Control+$mod+l exec swaylock -i /home/iptyshew/pictures/NyaITD5-arch-linux-wallpaper.png --ring-color 808080 --key-hl-color 000000 
 
 exec swayidle -w \
-        timeout 30 'swaylock -i /home/iptyshew/pictures/NyaITD5-arch-linux-wallpaper.png --ring-color 808080 --key-hl-color 000000' 
+        timeout 180 'swaylock -i /home/iptyshew/pictures/NyaITD5-arch-linux-wallpaper.png --ring-color 808080 --key-hl-color 000000' \
+        before-sleep 'swaylock -i /home/iptyshew/pictures/NyaITD5-arch-linux-wallpaper.png --ring-color 808080 --key-hl-color 000000' 
 
 input * xkb_layout "us,ru"
 input type:keyboard {
