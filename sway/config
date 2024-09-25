@@ -25,10 +25,8 @@ font pango:consolas 14
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg /usr/share/backgrounds/NyaITD5-arch-linux-wallpaper.png fill
+output * bg /home/iptyshew/pictures/NyaITD5-arch-linux-wallpaper.png fill
 
-# Use pactl to adjust volume in PulseAudio.
-set $refresh_i3status killall -SIGUSR1 i3status
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -36,6 +34,7 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+e exec alacritty -e ssh kate -t "emacs -nw"
 bindsym $mod+Return exec alacritty -e tmux
+bindsym $mod+x exec firefox --kiosk
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -134,9 +133,9 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-set $laptop eDP-1
-bindswitch --locked lid:on output $laptop disable
-bindswitch --locked lid:off output $laptop enable
+#set $laptop eDP-1
+#bindswitch --locked lid:on output $laptop disable
+#bindswitch --locked lid:off output $laptop enable
 
 
 # reload the configuration file
@@ -213,6 +212,11 @@ bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
 
 
 bindsym $mod+Alt+p exec grim -g "$(slurp)" - | wl-copy
+default_border none
+default_floating_border none
+titlebar_padding 1
+titlebar_border_thickness 0
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 xwayland enable
