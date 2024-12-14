@@ -82,7 +82,7 @@ color = "#d67ad2"
 draw_bold_text_with_bright_colors = false
 
 [font]
-size = 12
+size = 11
 
 [font.bold]
 family = "Consolas"
