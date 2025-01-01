@@ -212,12 +212,20 @@ bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
 
 
 bindsym $mod+Alt+p exec grim -g "$(slurp)" - | wl-copy
+bindsym $mod+Shift+v exec wf-recorder -g "$(slurp)" -f ~/Videos/recording-$(date +%F-%T).mp4
+bindsym $mod+Shift+s exec pkill -INT wf-recorder
+
 default_border none
 default_floating_border none
 titlebar_padding 1
 titlebar_border_thickness 0
 
 exec wlsunset  -l 34.6786 -L 33.0413 -t 3500 
+
+assign [app_id="google-chrome"] workspace 1
+assign [app_id="emacs"] workspace 2
+assign [app_id="alacritty"] workspace 3
+assign [app_id="org.telegram.desktop"] workspace 4
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
