@@ -25,8 +25,7 @@ font pango:consolas 14
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg /home/iptyshew/pictures/NyaITD5-arch-linux-wallpaper.png fill
-
+output * bg /home/iptyshew/pictures/image_2025-02-14_07-36-57.png fill
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod

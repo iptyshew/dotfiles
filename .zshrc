@@ -119,10 +119,12 @@ alias ll="ls -hal --color=auto"
 alias ls="exa --long"
 alias kemacs='ssh kate -t "emacs -nw"'
 alias kate='ssh kate -t "zsh"'
+alias less='less -S'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+  export ELECTRON_OZONE_PLATFORM_HINT=wayland
   exec sway
 fi
